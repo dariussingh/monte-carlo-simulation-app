@@ -11,7 +11,7 @@ st.write('App to run monte carlo simulation on facebook ad impressions dataset.'
 st.header('Simulation')
 
 # data
-ads = st.slider('Number of Advertisments', 1, 10, 7)
+ads = st.slider('Number of Advertisments', 5, 10, 8)
 data = utils.create_random_ads(ads)
 
 # prerequsites for MC sim
