@@ -18,7 +18,7 @@ data['probability'] = utils.calculate_prob(data['impressions'])
 data['cumulative_prob'] = utils.calculate_cumulative_probablity(data['probability'])
 data['rand_interval'] = utils.create_random_interval(data['cumulative_prob'])
 
-number_ads = st.slider('Run Simulation for N ads', 1, 10000, 10)
+number_ads = st.slider('Run Simulation for N ads', 1, 10000, 10000)
 # run sim
 # if st.button('Run Simulation'):
     # for i in range(1,number_ads):
