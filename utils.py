@@ -80,8 +80,8 @@ def plot_sim(sim_data):
                 
     # plotting 
     fig = plt.figure(figsize=(10,7))
-    plt.ylim(0,4000)
-    plt.xlim(0,10000)
+    plt.ylim(0,2700)
+    plt.xlim(0,10200)
     for ad in ad_impression_count.keys():
         plt.plot(ad_num_list, ad_impression_count[ad], label=ad)
     plt.legend()
