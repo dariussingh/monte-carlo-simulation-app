@@ -19,7 +19,7 @@ data['probability'] = utils.calculate_prob(data['impressions'])
 data['cumulative_prob'] = utils.calculate_cumulative_probablity(data['probability'])
 data['rand_interval'] = utils.create_random_interval(data['cumulative_prob'])
 
-number_ads = st.slider('Run Simulation for N ads', 1, 10000, 10000)
+number_ads = st.slider('Oppurtunity Size (=ad_slots*traffic)', 1, 10000, 10000)
 rand_nums = utils.generate_random_num(number_ads)
 sim = utils.run_simulation(rand_nums, data)
 utils.plot_sim(sim)
